@@ -1,3 +1,47 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Derby Countdown</title><link rel="stylesheet" href="style.css"><script defer src="script.js"></script></head>
-<body><main aria-label="Derby Middle School 2026–2027 countdown"><div class="dashboard"><img src="assets/derby-countdown-shell.png?v=0ce31d7d5d27" alt="" draggable="false"><output id="calendar" aria-label="Calendar days left"></output><output id="school" aria-label="School days left"></output><output id="holiday" aria-label="Next day off"></output><output id="date" aria-label="Day off dates"></output><output id="untilCalendar" aria-label="Calendar days until day off"></output><output id="untilSchool" aria-label="School days until day off"></output><button id="add">+ ADD SNOW DAY</button><output id="snow" aria-label="Snow days added" aria-live="polite"></output><button id="undo">UNDO</button><button id="reset">RESET</button></div><p id="status" role="status"></p></main></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Derby Countdown</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js">
+</script>
+</head>
+<body>
+<main aria-label="Derby Middle School 2026–2027 countdown">
+<div class="dashboard">
+<img src="assets/derby-countdown-shell.png?v=0ce31d7d5d27" alt="" draggable="false">
+<output id="calendar" aria-label="Calendar days left">
+</output>
+<output id="school" aria-label="School days left">
+</output>
+<output id="holiday" aria-label="Next day off">
+</output>
+<output id="date" aria-label="Day off dates">
+</output>
+<output id="untilCalendar" aria-label="Calendar days until day off">
+</output>
+<output id="untilSchool" aria-label="School days until day off">
+</output>
+<button id="add">+ ADD SNOW DAY</button>
+<output id="snow" aria-label="Snow days added" aria-live="polite">
+</output>
+<button id="undo">UNDO</button>
+<button id="reset">RESET</button>
+<section class="info-box" id="next-pd" aria-label="Next professional development day">
+<span class="info-label">NEXT PD DAY</span>
+<output id="pd-date"></output>
+<small id="pd-note"></small>
+</section>
+<section class="info-box" id="next-early" aria-label="Next Derby Middle School early dismissal">
+<span class="info-label">NEXT EARLY DISMISSAL</span>
+<output id="early-date"></output>
+<small id="early-note"></small>
+</section>
+</div>
+<p id="status" role="status">
+</p>
+</main>
+</body>
+</html>
