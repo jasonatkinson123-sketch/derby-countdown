@@ -1,1 +1,35 @@
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#090b0b;color:#fff4dc;font-family:monospace}body{display:flex;justify-content:center;align-items:center;min-height:100svh}main{width:min(100%,1536px)}.dashboard{position:relative;width:100%;aspect-ratio:3/2;container-type:inline-size}.dashboard img{display:block;width:100%;height:100%}output,button{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff4dc;font-family:monospace;font-weight:bold}output{overflow:hidden;white-space:nowrap}#calendar{left:19%;top:25%;width:22%;height:10%;font-size:7cqw}#school{left:67%;top:25%;width:19%;height:10%;font-size:7cqw}#holiday{left:22%;top:52%;width:23%;height:3.7%;font-size:1.35cqw}#date{left:22%;top:57.5%;width:10%;height:2.5%;font-size:1cqw}#untilCalendar{left:9.6%;top:63.5%;width:6%;height:4%;font-size:2.5cqw}#untilSchool{left:30.8%;top:63.5%;width:5%;height:4%;font-size:2.5cqw}#snow{left:69.2%;top:60.6%;width:3.6%;height:4%;font-size:2.5cqw}button{border:0;background:transparent;cursor:pointer;min-height:44px;min-width:44px;padding:0;touch-action:manipulation}button:focus-visible{outline:3px solid #fff;outline-offset:2px}button:hover{color:#ff5564}button:disabled{opacity:.45;cursor:default}#add{left:65.5%;top:55.2%;transform:translateY(-50%);width:22%;height:5%;font-size:1.65cqw}#undo,#reset{top:71%;transform:translateY(-50%);font-size:max(10px,1cqw);height:4%}#undo{left:65%;width:9%}#reset{left:81%;width:9%}#status{margin:0;text-align:center;font-size:12px;padding:8px;min-height:30px}@media(orientation:landscape) and (max-height:600px){main{width:min(100%,calc((100svh - 30px)*1.5))}}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#090b0b;color:#fff4dc;font-family:monospace}
+body{display:flex;justify-content:center;align-items:center;min-height:100svh}
+main{width:min(100%,1536px)}
+.dashboard{position:relative;width:100%;aspect-ratio:3/2;container-type:inline-size}
+.dashboard img{display:block;width:100%;height:100%}
+output,button{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff4dc;font-family:monospace;font-weight:bold}
+output{overflow:hidden;white-space:nowrap}
+#calendar{left:19%;top:25%;width:22%;height:10%;font-size:7cqw}
+#school{left:67%;top:25%;width:19%;height:10%;font-size:7cqw}
+#holiday{left:22%;top:52%;width:23%;height:3.7%;font-size:1.35cqw}
+#date{left:22%;top:57.5%;width:10%;height:2.5%;font-size:1cqw}
+#untilCalendar{left:9.6%;top:63.5%;width:6%;height:4%;font-size:2.5cqw}
+#untilSchool{left:30.8%;top:63.5%;width:5%;height:4%;font-size:2.5cqw}
+#snow{left:69.2%;top:60.6%;width:3.6%;height:4%;font-size:2.5cqw}
+button{border:0;background:transparent;cursor:pointer;min-height:44px;min-width:44px;padding:0;touch-action:manipulation}
+button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+button:hover{color:#ff5564}
+button:disabled{opacity:.45;cursor:default}
+#add{left:65.5%;top:55.2%;transform:translateY(-50%);width:22%;height:5%;font-size:1.65cqw}
+#undo,#reset{top:71%;transform:translateY(-50%);font-size:max(10px,1cqw);height:4%}
+#undo{left:65%;width:9%}
+#reset{left:81%;width:9%}
+#status{margin:0;text-align:center;font-size:12px;padding:8px;min-height:30px}
+.info-box{position:absolute;top:72.8%;width:22%;height:7.8%;border:.18cqw solid #9b9992;background:rgba(9,11,11,.9);box-shadow:inset 0 0 0 .1cqw #292c2c;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff4dc;font-family:monospace;font-weight:bold;line-height:1.05}
+.info-box::before,.info-box::after{content:"";position:absolute;width:.65cqw;height:.18cqw;background:#e52f3c;top:.55cqw}
+.info-box::before{left:.55cqw}
+.info-box::after{right:.55cqw}
+#next-pd{left:3.5%}
+#next-early{right:3.5%}
+.info-label{font-size:1.15cqw;letter-spacing:.08em}
+.info-box output{position:static;height:auto;margin-top:.45cqw;font-size:1.65cqw}
+.info-box small{min-height:1.05cqw;margin-top:.25cqw;color:#c9c4b9;font-size:.72cqw;letter-spacing:.04em}
+@media(orientation:landscape) and (max-height:600px){main{width:min(100%,calc((100svh - 30px)*1.5))}
+}
